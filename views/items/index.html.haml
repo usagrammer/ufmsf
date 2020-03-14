@@ -21,7 +21,7 @@
   人気のカテゴリー
   .pickups-header__category-names
     - @category_ranking&.each do |category|
-      = link_to category_path(category) do
+      = link_to "" do
         .pickups-header__category-names--category-name
           = category.name
 .pickups.horizontal-padding-15
@@ -31,7 +31,7 @@
       %span.pickup__name
         = items[0].category.root.name
         新着アイテム
-      = link_to category_path(items[0].category) do
+      = link_to "" do
         %span.pickup__display-all
           もっと見る >
       .pickup__items{class: "#{'auto-slick' if items.length >= 4}"}

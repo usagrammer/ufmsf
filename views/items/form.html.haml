@@ -164,11 +164,11 @@
   .block.horizontal-padding-5
     = f.submit "出品する", class:"button back-red font-white"
     - if @item.persisted?
-      = link_to item_path(@item), method: :delete do
+      = link_to "", method: :delete do
         .button.back-gray
           商品を削除する
     .horizontal-padding-25
-      = link_to user_path(current_user) do
+      = link_to "" do
         .button.back-gray
           戻る
 <script src="https://cdnjs.cloudflare.com/ajax/libs/fuse.js/3.3.1/fuse.min.js"></script>

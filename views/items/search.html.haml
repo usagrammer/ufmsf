@@ -1,5 +1,5 @@
 .search-view.horizontal-padding-15
-  = search_form_for(@q, url: search_items_path)  do |f|
+  = search_form_for(@q, url: "")  do |f|
     = f.select(:sorts, @order, {include_blank: "並び替え", selected: params[:q][:sorts]}, class: "search-form__input")
     .search-form
       .search-form__title
