@@ -3,7 +3,7 @@ Rails.application.routes.draw do
 
   # devise_for :users
 
-  resources :users, only: [:show] do
+  resource :users, only: [:show] do
     collection do
       get "card"
       get "selling"
