@@ -67,11 +67,12 @@
   .search-results
     - if @items.length > 0
       = render partial: "items/item", collection: @items, as: :item
+      #pagenation
+        = paginate(@items)
+
     - else
       .result-none
         .result-none__title
           検索結果
         .result-none__text
           該当する商品が見つかりません。検索条件を変えて、再度お試しください。
-        #pagenation
-          = paginate(@items)
